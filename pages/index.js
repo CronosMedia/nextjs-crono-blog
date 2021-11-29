@@ -5,8 +5,9 @@ import { FeaturedPosts } from "../sections";
 
 export default function Home({ posts }) {
 	return (
-		<div className="container mx-auto px-10 mb-8" lang="en">
+		<div className="container mx-auto px-10 mb-8">
 			<Head>
+				<html lang={lang} />
 				<meta charset="UTF-8" />
 				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 				<meta
