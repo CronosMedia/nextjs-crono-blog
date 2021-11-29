@@ -5,8 +5,14 @@ import { FeaturedPosts } from "../sections";
 
 export default function Home({ posts }) {
 	return (
-		<div className="container mx-auto px-10 mb-8">
+		<div className="container mx-auto px-10 mb-8" lang="en">
 			<Head>
+				<meta charset="UTF-8" />
+				<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1.0"
+				/>
 				<title>Crono Blog</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
