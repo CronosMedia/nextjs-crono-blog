@@ -153,7 +153,7 @@ export const getCategoryPost = async (slug) => {
 			postsConnection(
 				where: { categories_some: { slug: $slug } }
 				orderBy: createdAt_DESC
-				last: 10
+				last: 9
 			) {
 				edges {
 					cursor
