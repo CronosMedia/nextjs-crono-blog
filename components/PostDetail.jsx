@@ -17,6 +17,9 @@ const PostDetail = ({ post }) => {
 			if (obj.underline) {
 				modifiedText = <u key={index}>{text}</u>;
 			}
+			if (obj.h2) {
+				modifiedText = <h2 key={index}>{text}</h2>;
+			}
 		}
 
 		switch (type) {
@@ -82,6 +85,7 @@ const PostDetail = ({ post }) => {
 							{post.author.name}
 						</p>
 					</div>
+
 					<div className="font-medium text-gray-700">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

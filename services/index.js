@@ -96,6 +96,7 @@ export const getSimilarPosts = async (categories, slug) => {
 					slug_not: $slug
 					AND: { categories_some: { slug_in: $categories } }
 				}
+				orderBy: createdAt_DESC
 				last: 3
 			) {
 				title
@@ -153,7 +154,7 @@ export const getCategoryPost = async (slug) => {
 			postsConnection(
 				where: { categories_some: { slug: $slug } }
 				orderBy: createdAt_DESC
-				last: 9
+				last: 10
 			) {
 				edges {
 					cursor
